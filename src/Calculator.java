@@ -14,14 +14,16 @@ public  class Calculator {
         int secondNum = userInput.nextInt();
         System.out.println("Calculating");
 
-        calculating(sign, firstNum, secondNum);
+
+        int anotherAns = calculating(sign, firstNum, secondNum);
+        System.out.println(anotherAns);
 
     }
 
 
     public static int calculating(String sign, int firstNum, int secondNum){
-        int ans;
 
+        int ans;
         if (sign.equals("+")){
             ans = firstNum + secondNum;
 
@@ -39,7 +41,6 @@ public  class Calculator {
             ans = 0;
         }
 
-        System.out.println(ans);
         return ans;
 
     }
